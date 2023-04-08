@@ -1,0 +1,172 @@
+/* 
+   #about,
+   .heading,
+   .blocks,
+   #ideas
+write your code here
+
+*/
+
+.flex-2-col {
+   display: flex;
+   align-items: center;
+}
+
+.tm-section-description {
+   text-indent: 20px;
+}
+
+/* Tiles with text should have hover effect (see Figure 3). */
+
+.box-bg h2:hover {
+   font-weight: bold;
+   color: #fff;
+   background-color: #87cefa;
+   cursor: pointer;
+}
+
+/* Change color of first letter in each paragraphs to lightskyblue (#87CEFA) and font size to 30px.
+(see Figure 4). */
+
+.tm-main-content p:first-letter {
+   color: #87cefa;
+   font-size: 30px;
+}
+
+/* 
+Add box shadow to navigation and each content block. 
+Add grey border to the banner. 
+figure 5 
+*/
+
+#home,
+nav,
+.blocks,
+.tm-content-box {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.tm-banner {
+   background-color: grey;
+}
+.tm-banner .tm-banner-inner {
+   background-color: white;
+}
+
+/* Add triangle to each section on the page using pseudo elements. (see left top corner in Figure 6) */
+
+section::before {
+   content: "";
+   position: absolute;
+   border: 30px solid transparent;
+   border-left: 250px solid #87cefa;
+   border-top: 0px solid #87cefa;
+}
+
+/* Change color of ‘How We Do It’ to gainsboro and add letter spacing 5px. */
+
+.active > .carousel-content > .flex-item > .tm-section-title {
+   color: gainsboro;
+   letter-spacing: 5px;
+}
+
+/* Each first paragraph which placed after h2 tag should have italic font style. */
+
+h2 + p {
+   font-style: italic;
+}
+
+/* Text in the paragraph should look like in Figure 7. (vertical space between lines is increased, there
+is some free space at the start of the first line). */
+
+.padding-medium p {
+   line-height: 2.5rem;
+}
+
+/* Apply the following styles in “We are” section:
+- already visited links should become underlined
+- the hovered links should look like “2. Consultants” item
+- add ‘new’ label to the end of words. It should be applied only for ‘Designers’ and
+‘Strategists’ items.
+figure 9 
+*/
+
+.tm-content-box div ol li:nth-child(1)::after,
+.tm-content-box div ol li:nth-child(3)::after {
+   content: "New";
+   color: red;
+   vertical-align: top;
+   font-size: 11px;
+   font-weight: bold;
+   font-variant: small-caps;
+}
+ol > li > a {
+   color: black;
+   text-decoration: none;
+}
+ol > li > a:hover {
+   color: #87cefa;
+   border-bottom: 1px solid #87cefa;
+}
+ol > li > a:visited {
+   text-decoration: underline;
+}
+
+/* Add layout and styles for following block. figure 10 */
+
+.box-work {
+   padding: 10px 10px;
+   background-color: grey;
+}
+.box-work:nth-child(2n + 1) {
+   background-color: white;
+}
+
+/* Add asterisk to email field. figure 11 */
+
+.mandatory-field::after {
+   content: " *";
+   position: absolute;
+   font-weight: bold;
+   color: red;
+}
+/* Change submit button styles. figure 12 */
+.submit-btn {
+   display: block;
+   margin-left: auto;
+   padding: 15px 40px;
+   border-radius: 0px;
+   border-color: #87cefa;
+   color: #87cefa;
+   background-color: white;
+}
+.submit-btn:hover {
+   background-color: #87cefa;
+   border-color: #87cefa;
+   color: white;
+}
+
+/* Add hover effect for navigation items (grey background) (Figure 13). */
+
+.tm-main-nav > ul > li:hover {
+   background-color: grey;
+}
+
+/* print version figure 2 */
+
+@media print {
+   .tm-content-box:not(.flex-2-col):not(.tm-content-header),
+   .tm-sidebar .tm-main-nav,
+   .blocks,
+   section::before {
+      display: none;
+   }
+   #home {
+      padding-bottom: 0px !important;
+   }
+   .flex-2-col > .flex-item {
+      width: 120%;
+   }
+   .padding-medium p {
+      line-height: 1.5rem;
+   }
+}

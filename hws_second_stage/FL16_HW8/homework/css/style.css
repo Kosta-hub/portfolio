@@ -1,0 +1,103 @@
+/* Write your styles here */
+body {
+   background: rgb(181, 207, 200);
+}
+.container {
+   max-width: 600px;
+   margin: 20vh auto 0;
+   display: flex;
+}
+.left {
+   max-width: 250px;
+}
+.calc {
+   background: rgb(109, 104, 117);
+   border-radius: 5px;
+   padding: 15px;
+}
+.screen {
+   background: white;
+   text-align: right;
+   margin: 0 0 10px 0;
+   padding: 5px 10px;
+   line-height: 2rem;
+}
+.parent {
+   display: grid;
+   grid-template-columns: repeat(4, 50px);
+   grid-template-rows: repeat(5, 50px);
+   grid-column-gap: 3px;
+   grid-row-gap: 3px;
+}
+.button-item {
+   background: rgb(181, 131, 141);
+   color: white;
+   text-align: center;
+   line-height: 50px;
+}
+.button-item:hover {
+   background: rgb(170, 116, 127);
+   cursor: pointer;
+}
+.hidden-item {
+   background: rgb(201, 166, 173);
+}
+.hidden-item:hover {
+   background: rgb(201, 166, 173);
+   cursor: default;
+}
+
+.right {
+   display: block;
+   overflow: auto;
+   width: 100%;
+   padding: 20px;
+   text-align: right;
+   max-height: 290px;
+}
+.new-log {
+   position: relative;
+   margin-top: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+.circle {
+   width: 15px;
+   height: 15px;
+   left: 0;
+   border-radius: 50%;
+   border: 2px solid red;
+}
+.close {
+   width: 15px;
+   height: 15px;
+   position: relative;
+}
+.close:hover {
+   opacity: 1;
+}
+.close:before,
+.close:after {
+   position: absolute;
+   content: " ";
+   left: 50%;
+   height: 15px;
+   width: 2px;
+   background-color: #333;
+}
+.close:before {
+   transform: rotate(45deg);
+}
+.close:after {
+   transform: rotate(-45deg);
+}
+.circle:hover,
+.close:hover::after,
+.close:hover::before {
+   background-color: red;
+   cursor: pointer;
+   color: red;
+}
+.red {
+   background-color: red;
+}

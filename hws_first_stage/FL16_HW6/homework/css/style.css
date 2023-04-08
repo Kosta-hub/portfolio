@@ -1,0 +1,40 @@
+/*Your code goes here*/
+body {
+   font-family: "Roboto", sans-serif;
+}
+.navbar-brand {
+   font-size: 1.5em;
+   font-weight: 600;
+   line-height: 1em;
+}
+.btn,
+.h2-f,
+.main-title > p {
+   font-size: 1.3em;
+}
+.bgr-colore,
+.footer {
+   background-color: #525252;
+}
+.bgr-colo {
+   background-color: #fff;
+   border: none;
+}
+.title-c,
+.btn,
+.card,
+.copy {
+   color: #fff;
+}
+.card,
+.copy {
+   background-color: transparent;
+   border: none;
+}
+.card-f {
+   color: #111;
+}
+.btn {
+   background-color: coral;
+   border-color: transparent;
+}

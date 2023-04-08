@@ -1,0 +1,35 @@
+
+body {
+   background: rgb(198, 172, 143);
+   color: #004747;
+}
+header {
+   text-align: center;
+}
+.container {
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+#res {
+   padding: 10px 0;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: bold;
+}
+
+.button-item:hover,
+#res:hover {
+   cursor: pointer;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.far {
+   font-size: 3em;
+}
+.log-block {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 40px;
+}

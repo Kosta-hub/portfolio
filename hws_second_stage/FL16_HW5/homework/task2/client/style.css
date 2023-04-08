@@ -1,0 +1,57 @@
+body {
+   height: 100vh;
+   background: rgb(34, 193, 195);
+   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+   background-repeat: no-repeat;
+}
+h1 {
+   margin: 0 auto;
+   width: fit-content;
+   color: #fff;
+}
+.message-container {
+   width: 80%;
+   height: 70vh;
+   margin: 3vh auto;
+   background-color: beige;
+   border: 2px solid rgb(146, 3, 117);
+   border-radius: 10px;
+   overflow: auto;
+}
+.form-container {
+   width: 80%;
+   margin: 5px auto;
+}
+input {
+   padding: 0;
+   width: 99.8%;
+}
+button {
+   width: 100%;
+}
+
+input,
+button {
+   display: block;
+
+   margin: 5px auto;
+   border: 2px solid rgb(146, 3, 117);
+   border-radius: 10px;
+   font-size: 1.5rem;
+   line-height: 3rem;
+}
+.newMessage {
+   background-color: rgb(199, 249, 255);
+   width: fit-content;
+   max-width: 300px;
+   border-radius: 5px;
+   word-wrap: break-word;
+   border: 2px solid rgb(0, 207, 214);
+   padding: 5px 10px;
+   margin: 5px 10px;
+   font-size: 1.5rem;
+}
+.userDiv,
+.timeDiv {
+   margin: 0px 10px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 14 - JS DOM Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="task1">
+    <!-- TEMPLATE FOR TASK 1 GOES HERE -->
+    <table class="table" id="table">
+      <tr id="tr1">
+        <td class="cell" id="row1">Cell</td>
+        <td class="cell" id='3'>Cell</td>
+        <td class="cell" id='6'>Cell</td>
+      </tr>
+      <tr id="tr2">
+        <td class="row" id="row2">Cell</td>
+        <td class="cell" id='4'>Cell</td>
+        <td id='Special'>Special Cell</td>
+      </tr>
+      <tr id="tr3">
+        <td class="cell" id="row3">Cell</td>
+        <td class="cell" id='5'>Cell</td>
+        <td class="cell" id='8'>Cell</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div id="task2">
+    <!-- TEMPLATE FOR TASK 2 GOES HERE -->
+    <form method="post" class="form">
+      <div class="msg" id="msg"></div>
+      <input id="tel" class="tel" type="tel" placeholder="Type phone number in format +380********">
+      <input id="tel-btn" class="tel-btn" type="button" value="Send" disabled>
+    </form>
+  </div>
+
+  <div id="task3">
+    <!-- TEMPLATE FOR TASK 3 GOES HERE -->
+    <div>
+      <div class="court" id="court">
+        <div class="basket left" id="B" onclick="goal(id)"></div>
+        <div class="basket right" id="A" onclick="goal(id)"></div>
+        <img src="assets/court.png" alt="court">
+        <div class="ball" id="ball"><img src="assets/ball.png" alt="ball"></div>
+      </div>
+      <div class="score">
+        <span class="team-a" id="sA">Team A: 0</span>
+        <span class="team-b" id="sB">Team B: 0</span>
+      </div>
+      <div class="team-point" id="point"></div>
+    </div>
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

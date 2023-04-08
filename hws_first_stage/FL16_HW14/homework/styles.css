@@ -1,0 +1,114 @@
+/* START: Task 1 Styles */
+#task1 {
+   display: flex;
+   justify-content: center;
+}
+.table {
+   border: 1px solid black;
+}
+td {
+   height: 100px;
+   width: 90px;
+   padding: 0 10px;
+   border: 1px solid black;
+}
+td:hover {
+   cursor: pointer;
+}
+.green {
+   background-color: green;
+}
+.blue {
+   background-color: blue;
+}
+.yellow {
+   background-color: yellow;
+}
+/* END: Task 1 Styles */
+
+/* START: Task 2 Styles */
+#task2 {
+   display: flex;
+   margin: 100px 0;
+}
+.form {
+   position: relative;
+   width: fit-content;
+   margin: 20px auto;
+}
+.tel {
+   outline: none !important;
+   line-height: 3rem;
+   width: 277px;
+}
+.focus {
+   border-color: red;
+}
+.tel-btn {
+   height: 52px;
+}
+.msg {
+   display: none;
+   position: absolute;
+   padding: 5px 10px;
+   text-align: center;
+   top: -55px;
+   width: 265px;
+   border-radius: 2px;
+   height: 40px;
+   color: white;
+}
+.invalid {
+   background-color: rgb(241, 102, 102);
+}
+.valid {
+   background-color: green;
+   line-height: 40px;
+}
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+img {
+   width: 100%;
+   height: 100%;
+}
+.court {
+   position: relative;
+   width: 600px;
+   height: 330px;
+   margin: 0 auto;
+}
+.score {
+   display: flex;
+   margin: 0 auto;
+   justify-content: space-between;
+   width: 590px;
+}
+.basket {
+   position: absolute;
+   top: 157px;
+   width: 15px;
+   height: 15px;
+   z-index: 999;
+}
+.left {
+   left: 33px;
+}
+.right {
+   right: 33px;
+}
+.ball {
+   position: absolute;
+   top: 145px;
+   left: 280px;
+   width: 40px;
+   height: 40px;
+   z-index: 1000;
+}
+.team-point {
+   width: fit-content;
+   margin: 0 auto;
+   font-size: 2rem;
+   margin-bottom: 5em;
+}
+/* END: Task 3 Styles */

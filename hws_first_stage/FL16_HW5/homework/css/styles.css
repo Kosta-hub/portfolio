@@ -1,0 +1,468 @@
+/*
+* Colors used in design.
+*   primary: #0078aa;
+*   dark: #363636;
+*   light: #fff;
+*/
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  width: 100%;
+}
+.main-wrap {
+  background-color: #fff;
+}
+.title {
+  width: 95%;
+  font-size: 1.3em;
+  line-height: 1em;
+  text-align: center;
+}
+/* =============================== header ================================== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 100px;
+  z-index: 100;
+}
+.logo {
+  margin: 15px auto 0 auto;
+  width: max-content;
+}
+.nav-menu {
+  margin: 0 auto;
+  width: fit-content;
+}
+.nav-menu > ul > li {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9em;
+  list-style: none;
+  margin-left: 5px;
+  display: inline;
+}
+.nav-menu > ul > li:hover {
+  color: #0078aa;
+  cursor: pointer;
+}
+/* =============================== main section ================================== */
+.main-section {
+  background-image: url(../img/header_bg.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 3vh;
+}
+h1 {
+  width: min-content;
+  text-align: center;
+  margin: 20vh auto 2vh auto;
+  font-size: 2.5rem;
+}
+.main-section-content {
+  width: 95%;
+  margin: 0 auto 2vh auto;
+  text-align: center;
+}
+.main-icons {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.icon {
+  background-color: #0078aa;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+/* =============================== about section ================================== */
+.title > p {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: #0078aa;
+}
+.about-item {
+  padding: 0 2.5%;
+  text-align: center;
+}
+.item-header {
+  margin: 0;
+}
+.item-header::before {
+  content: "→";
+  margin-right: 15px;
+  color: #0078aa;
+}
+.about-item > p {
+  font-size: 0.9em;
+  margin: 0 0 1vh 0;
+}
+/* =============================== help section ================================== */
+.help-section {
+  background-image: url(../img/services_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.help-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.help-item {
+  width: 80%;
+  background-color: #fff;
+  padding: 5%;
+  margin-bottom: 2vh;
+}
+.imag {
+  width: 35%;
+}
+/* =============================== offer section ================================== */
+.offer-items,
+.offer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offer-item {
+  width: 90%;
+  background-color: #53ccff;
+  color: #fff;
+  margin: 2vh 0;
+}
+.offer-item > h4 {
+  font-size: 1.5rem;
+}
+.offer-item > span {
+  font-size: 3.5em;
+  font-weight: 600;
+}
+.offer-item > p {
+  font-size: 1em;
+  font-style: italic;
+}
+.offer-item > ul {
+  padding: 0;
+  margin-bottom: 30px;
+}
+.offer-item > ul > li {
+  list-style: none;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 3em;
+}
+.offer-item > ul > .x {
+  font-size: 2.5em;
+  line-height: 1em;
+}
+.offer-item > a {
+  display: block;
+  margin-bottom: 30px;
+  border: 2px solid #0078aa;
+  color: #0078aa;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  background-color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+.offer-item:nth-child(2n) {
+  background-color: #fff;
+  color: #0078aa;
+  border: 1px solid #0078aa;
+}
+/* =============================== contact section ================================== */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form > input {
+  width: 75%;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: #53ccff;
+  font-style: italic;
+  line-height: 1.5em;
+  margin-bottom: 2vh;
+}
+form > input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+/* =============================== footer ================================== */
+.anchor-btn {
+  position: fixed;
+  bottom: 10vh;
+  right: 4%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  background-color: #0078aa;
+}
+.anchor-btn > a {
+  display: block;
+  border-radius: 50%;
+  color: #fff;
+}
+footer {
+  background-color: #363636;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+}
+footer > p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  /* =============================== header ================================== */
+  .title {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .title > p {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: #0078aa;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .header-wrap {
+    margin-top: 10px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo,
+  .nav-menu {
+    margin: 0;
+  }
+  .nav-menu {
+    width: fit-content;
+  }
+  /* =============================== main section ================================== */
+  .main-section {
+    background-position: 0% 50%;
+    background-size: 150%;
+    padding: 15vh 0 4vh 0;
+  }
+  h1 {
+    width: calc(100% - 30%);
+    text-align: left;
+    margin: 10vh auto 2vh 2.5%;
+  }
+  .main-section-content {
+    width: 60%;
+    margin: 0 auto 2vh 2.5%;
+    text-align: left;
+  }
+  .main-icons {
+    margin: 10px auto 0 2.5%;
+    justify-content: flex-start;
+  }
+  .icon {
+    margin-right: 20px;
+  }
+  /* =============================== about section ================================== */
+  .about-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
+  .about-wrap {
+    width: 80%;
+    padding: 0 2%;
+  }
+  .about-header {
+    text-align: left;
+    padding-left: 2.5%;
+    margin: 0 0;
+  }
+  .about-item {
+    text-align: left;
+  }
+  .item-header {
+    margin: 10px 0;
+  }
+  .item-header::before {
+    content: "→";
+    margin-right: 15px;
+    color: #0078aa;
+  }
+  /* =============================== help section ================================== */
+  .help-items {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .help-item {
+    width: 25%;
+    margin: 0 auto;
+    padding: 3%;
+    margin-bottom: 3vh;
+    font-size: 0.9em;
+  }
+  .imag {
+    width: 70%;
+  }
+  /* =============================== offer section ================================== */
+  .offer-items {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .offer-item {
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .offer-item:nth-child(2n) {
+    padding: 15px 0;
+  }
+  /* =============================== contact section ================================== */
+  .contact-section {
+    position: relative;
+    display: flex;
+  }
+  .ledy2 {
+    width: 90%;
+  }
+  .contact-wrap {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    background-color: #fff;
+    padding: 0 2.5%;
+  }
+  .offers-header {
+    text-align: left;
+  }
+  form {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .title > p {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: #0078aa;
+  }
+  /* =============================== header ================================== */
+
+  .header-wrap {
+    width: 77%;
+  }
+  .logo,
+  .nav-menu {
+    margin: 0;
+  }
+  .nav-menu {
+    width: fit-content;
+  }
+  /* =============================== main section ================================== */
+  .main-section {
+    background-size: 100%;
+  }
+  h1 {
+    width: 39%;
+    margin: 10vh auto 2vh 12%;
+  }
+  .main-section-content {
+    width: 30%;
+    margin: 0 auto 2vh 12%;
+  }
+  .main-icons {
+    margin: 10px auto 10vh 12%;
+  }
+  /* =============================== about section ================================== */
+  .about-section {
+    margin-bottom: 5vh;
+  }
+  .about-wrap {
+    width: 30%;
+    padding: 0 15% 0 0;
+  }
+  .about-header {
+    text-align: left;
+    padding-left: 2.5%;
+    margin: 0 0;
+  }
+  .about-item {
+    text-align: left;
+    font-size: 0.9em;
+    padding: 0;
+  }
+  .item-header {
+    margin: 10px 0;
+  }
+  .item-header::before {
+    content: "→";
+    margin-right: 15px;
+    color: #0078aa;
+  }
+  /* =============================== help section ================================== */
+  .help-items {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .help-item {
+    width: 27%;
+    padding: 2%;
+  }
+  .info > p {
+    font-size: 0.9em;
+  }
+  .imag {
+    width: 40%;
+  }
+  /* =============================== offer section ================================== */
+  .offers-section {
+    background-image: url(../img/pricing_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10px;
+  }
+  .offer-items {
+    margin: 30px 0;
+  }
+  .offer-item {
+    width: 25%;
+    font-size: 0.8em;
+  }
+
+  /* =============================== contact section ================================== */
+  .contact-section {
+    position: relative;
+  }
+  .ledy2 {
+    width: 50%;
+  }
+  .contact-wrap {
+    position: relative;
+  }
+}

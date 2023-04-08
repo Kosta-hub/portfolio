@@ -1,0 +1,16 @@
+/* write your styles here */
+body {
+   margin: 0;
+}
+.header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.main-title {
+   text-align: center;
+}
+form {
+   display: flex;
+   align-items: center;
+}

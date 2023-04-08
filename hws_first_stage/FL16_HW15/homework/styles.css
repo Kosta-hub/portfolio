@@ -1,0 +1,29 @@
+#root {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+#alertMessage {
+   position: absolute;
+   left: 5px;
+   padding: 0 15px;
+   background-color: rgb(80, 80, 255);
+   border: solid 2px rgb(13, 24, 87);
+   border-radius: 5px;
+   font-size: 1em;
+   line-height: 5rem;
+   color: white;
+}
+.hidden {
+   display: none;
+}
+ul {
+   padding: 0;
+}
+li {
+   display: flex;
+   justify-content: space-between;
+   padding: 0;
+   margin: 10px 0;
+   list-style: none;
+}
